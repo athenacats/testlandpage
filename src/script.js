@@ -25,3 +25,8 @@ function SlideShow(n) {
 function currentSlide(n) {
   SlideShow((slidePosition = n));
 }
+
+function toggleAccordion(selector) {
+  const linksElement = document.querySelector(selector);
+  linksElement.classList.toggle("active");
+}

@@ -30,7 +30,9 @@ $footerText: #63769d;
 .container {
   width: 100vw;
   height: 100%;
-
+  .mobileBurger {
+    display: none;
+  }
   .hero {
     position: relative;
 
@@ -308,4 +310,90 @@ $footerText: #63769d;
       z-index: 1000;
     }
   }
+}
+
+@media screen and (max-width: 767px) {
+  .header1 .mobileBurger,
+  .header2 .mobileBurger {
+    display: block; /* Show the menu icon on mobile */
+    //align-self: flex-end;
+    justify-self: flex-end;
+  }
+  .header1,
+  .header2 {
+    display: flex;
+    justify-content: space-between; /* Adjust this property to your desired alignment */
+    align-items: center; /* Add this for vertical alignment if needed */
+    gap: 0;
+  }
+
+  .header1 .mobileBurger,
+  .header2 .mobileBurger {
+    cursor: pointer;
+  }
+  .container .hero .header1 .links {
+    display: none;
+    gap: 0;
+  }
+  .container .main .header2 .links {
+    display: none;
+    gap: 0;
+  }
+
+  /* Accordion menu for .links on mobile */
+  .container .hero .header1 .links.active {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    margin-top: 0;
+    height: 60px;
+    position: absolute;
+    right: 20%;
+    top: 45px;
+
+    gap: 5px;
+    background-color: $footer;
+
+    li {
+      display: block;
+      line-height: 0;
+      letter-spacing: 0;
+      cursor: pointer;
+    }
+  }
+  .container .main .header2 .links.active {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    margin-top: 0;
+    height: 60px;
+    position: relative;
+    top: 45px;
+
+    z-index: 5000;
+    left: 20%;
+    background-color: $footer;
+
+    li {
+      color: $white;
+      cursor: pointer;
+      line-height: 20px;
+      padding-top: 0;
+      letter-spacing: 100;
+      &:first-child {
+        padding-top: 5px;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Tablets (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Adjust any tablet-specific styles here */
+}
+
+/* Desktop (992px and above) */
+@media only screen and (min-width: 992px) {
+  /* Adjust any desktop-specific styles here */
 }
