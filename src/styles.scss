@@ -34,9 +34,11 @@ $footer: rgb(65, 79, 107, 0.8);
     position: relative;
 
     .background {
+      position: relative;
       width: 100%;
       max-height: 825px;
-
+      object-position: center top;
+      top: 0;
       object-fit: cover;
     }
     .header1 {
@@ -122,12 +124,70 @@ $footer: rgb(65, 79, 107, 0.8);
         }
       }
       .carousel {
-        background-color: $textTrpt;
-        z-index: 20;
-        height: 200px;
+        display: flex;
+        flex-direction: column;
         position: absolute;
+        height: 200px;
         bottom: 0;
         width: 100%;
+        z-index: 20;
+        gap: 5px;
+
+        align-items: center;
+        background-color: $textTrpt;
+        .info {
+          z-index: 20;
+          display: none;
+          gap: 10px;
+          padding: 25px 20% 0 20%;
+          align-items: center;
+          justify-content: center;
+          img {
+            height: 135px;
+            width: 220px;
+          }
+          &:first-child {
+            display: flex;
+          }
+        }
+
+        .ellipse {
+          cursor: pointer;
+          height: 4px;
+          width: 4px;
+          background-color: $text;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.5s ease;
+        }
+        .enable,
+        .ellipse:hover {
+          background-color: $white;
+        }
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.4s;
+          animation-name: fade;
+          animation-duration: 1.4s;
+        }
+
+        @-webkit-keyframes fade {
+          from {
+            opacity: 0.5;
+          }
+          to {
+            opacity: 2;
+          }
+        }
+
+        @keyframes fade {
+          from {
+            opacity: 0.5;
+          }
+          to {
+            opacity: 2;
+          }
+        }
       }
     }
     .textBlock {

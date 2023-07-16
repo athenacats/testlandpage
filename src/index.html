@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <title>Losangeles Mountains</title>
   </head>
-  <body>
+  <body onload="SlideShow(slidePosition)">
     <div class="container">
       <div class="hero">
         <img
@@ -66,7 +67,31 @@
               </p>
             </div>
           </div>
-          <div class="carousel"></div>
+          <div class="carousel fade">
+            <div class="info">
+              <img src="./assets/group1.png" />
+              <img src="./assets/group2.png" />
+              <img src="./assets/group1.png" />
+              <img src="./assets/group2.png" />
+            </div>
+            <div class="info">
+              <img src="./assets/group1.png" />
+              <img src="./assets/group2.png" />
+              <img src="./assets/group1.png" />
+              <img src="./assets/group2.png" />
+            </div>
+            <div class="info">
+              <img src="./assets/group1.png" />
+              <img src="./assets/group2.png" />
+              <img src="./assets/group1.png" />
+              <img src="./assets/group2.png" />
+            </div>
+            <div class="ellipses">
+              <span class="ellipse" onclick="currentSlide(1)"></span>
+              <span class="ellipse" onclick="currentSlide(2)"></span>
+              <span class="ellipse" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
         </section>
 
         <section class="textBlock">
