@@ -24,7 +24,8 @@ $light: rgb(173, 180, 194);
 $textTrpt: rgb(65, 79, 107, 0.6);
 $white: hsl(0, 0%, 100%);
 $whiteTrpt: rgb(255, 255, 255, 0.6);
-$footer: rgb(65, 79, 107, 0.8);
+$footer: #414f6b;
+$footerText: #63769d;
 
 .container {
   width: 100vw;
@@ -40,6 +41,7 @@ $footer: rgb(65, 79, 107, 0.8);
       object-position: center top;
       top: 0;
       object-fit: cover;
+      display: block;
     }
     .header1 {
       padding: 8px 20%;
@@ -50,12 +52,16 @@ $footer: rgb(65, 79, 107, 0.8);
       display: flex;
       justify-content: space-between;
       z-index: 100;
+      .logo {
+        cursor: pointer;
+      }
       .links {
         display: flex;
         gap: 45px;
       }
       li {
         font-family: $font1;
+        cursor: pointer;
         color: $white;
         display: flex;
         font-size: 12px;
@@ -80,6 +86,7 @@ $footer: rgb(65, 79, 107, 0.8);
       .logo {
         display: flex;
         gap: 10px;
+        cursor: pointer;
       }
       .links {
         display: flex;
@@ -87,6 +94,7 @@ $footer: rgb(65, 79, 107, 0.8);
       }
       li {
         font-family: $font1;
+        cursor: pointer;
         color: $text;
         display: flex;
         font-size: 12px;
@@ -95,6 +103,7 @@ $footer: rgb(65, 79, 107, 0.8);
         text-decoration: underline;
         letter-spacing: 100;
       }
+
       a {
         text-decoration: none;
       }
@@ -104,7 +113,7 @@ $footer: rgb(65, 79, 107, 0.8);
       img {
         width: 100%;
         max-height: 900px;
-
+        display: block;
         object-fit: cover;
       }
       .details {
@@ -131,7 +140,6 @@ $footer: rgb(65, 79, 107, 0.8);
         bottom: 0;
         width: 100%;
         z-index: 20;
-        gap: 5px;
 
         align-items: center;
         background-color: $textTrpt;
@@ -145,9 +153,13 @@ $footer: rgb(65, 79, 107, 0.8);
           img {
             height: 135px;
             width: 220px;
+            cursor: pointer;
           }
           &:first-child {
             display: flex;
+          }
+          img:hover {
+            opacity: 0.8;
           }
         }
 
@@ -228,20 +240,26 @@ $footer: rgb(65, 79, 107, 0.8);
         font-size: 20px;
         color: $light;
         font-weight: 600;
-        text-decoration: underline;
+        cursor: pointer;
       }
       .selected {
         background-color: $light;
         color: $text;
+        text-decoration: underline;
+        text-underline-offset: 3px;
       }
     }
   }
   .bottomContent {
+    margin: 0;
     position: relative;
+    max-height: 545px;
+
     img {
       width: 100%;
       max-height: 545px;
       object-fit: cover;
+      display: block;
     }
     .schedule {
       background-color: $whiteTrpt;
@@ -272,6 +290,7 @@ $footer: rgb(65, 79, 107, 0.8);
     }
   }
   footer {
+    margin: 0;
     margin-top: 0;
     width: 100vw;
     padding: 8px 20%;
@@ -281,13 +300,12 @@ $footer: rgb(65, 79, 107, 0.8);
     align-items: center;
     background-color: $footer;
     .logo {
-      display: flex;
-      gap: 10px;
-      z-index: -200;
+      cursor: pointer;
     }
     h4 {
       font-size: 12px;
-      color: $textTrpt;
+      color: $footerText;
+      z-index: 1000;
     }
   }
 }

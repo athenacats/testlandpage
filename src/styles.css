@@ -31,6 +31,7 @@ body {
   top: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 .container .hero .header1 {
   padding: 8px 20%;
@@ -42,12 +43,16 @@ body {
   justify-content: space-between;
   z-index: 100;
 }
+.container .hero .header1 .logo {
+  cursor: pointer;
+}
 .container .hero .header1 .links {
   display: flex;
   gap: 45px;
 }
 .container .hero .header1 li {
   font-family: "Lato", sans-serif;
+  cursor: pointer;
   color: hsl(0, 0%, 100%);
   display: flex;
   font-size: 12px;
@@ -70,6 +75,7 @@ body {
 .container .main .header2 .logo {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 .container .main .header2 .links {
   display: flex;
@@ -77,6 +83,7 @@ body {
 }
 .container .main .header2 li {
   font-family: "Lato", sans-serif;
+  cursor: pointer;
   color: #414f6b;
   display: flex;
   font-size: 12px;
@@ -94,6 +101,7 @@ body {
 .container .main .content img {
   width: 100%;
   max-height: 900px;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -121,7 +129,6 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 20;
-  gap: 5px;
   align-items: center;
   background-color: rgba(65, 79, 107, 0.6);
 }
@@ -136,9 +143,13 @@ body {
 .container .main .content .carousel .info img {
   height: 135px;
   width: 220px;
+  cursor: pointer;
 }
 .container .main .content .carousel .info:first-child {
   display: flex;
+}
+.container .main .content .carousel .info img:hover {
+  opacity: 0.8;
 }
 .container .main .content .carousel .ellipse {
   cursor: pointer;
@@ -205,20 +216,25 @@ body {
   font-size: 20px;
   color: rgb(173, 180, 194);
   font-weight: 600;
-  text-decoration: underline;
+  cursor: pointer;
 }
 .container .main .header3 .selected {
   background-color: rgb(173, 180, 194);
   color: #414f6b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .container .bottomContent {
+  margin: 0;
   position: relative;
+  max-height: 545px;
 }
 .container .bottomContent img {
   width: 100%;
   max-height: 545px;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 .container .bottomContent .schedule {
   background-color: rgba(255, 255, 255, 0.6);
@@ -247,6 +263,7 @@ body {
   justify-content: space-between;
 }
 .container footer {
+  margin: 0;
   margin-top: 0;
   width: 100vw;
   padding: 8px 20%;
@@ -254,14 +271,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(65, 79, 107, 0.8);
+  background-color: #414f6b;
 }
 .container footer .logo {
-  display: flex;
-  gap: 10px;
-  z-index: -200;
+  cursor: pointer;
 }
 .container footer h4 {
   font-size: 12px;
-  color: rgba(65, 79, 107, 0.6);
+  color: #63769d;
+  z-index: 1000;
 }/*# sourceMappingURL=styles.css.map */
