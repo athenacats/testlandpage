@@ -153,8 +153,8 @@ $footerText: #63769d;
           align-items: center;
           justify-content: center;
           img {
-            height: 135px;
-            width: 220px;
+            max-height: 135px;
+            max-width: 220px;
             cursor: pointer;
           }
           &:first-child {
@@ -312,12 +312,37 @@ $footerText: #63769d;
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .container .main .content .details .text .number img {
+    height: 90px;
+    width: auto;
+  }
+  .container .main .content .details .text p {
+    font-size: 12px;
+  }
+  .container .main .content .carousel {
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .container .main .content .carousel .info img {
+    width: 180px;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .header1 img {
+    height: 30px;
+  }
   .header1 .mobileBurger,
   .header2 .mobileBurger {
     display: block; /* Show the menu icon on mobile */
     //align-self: flex-end;
     justify-self: flex-end;
+    cursor: pointer;
+    color: $text;
   }
   .header1,
   .header2 {
@@ -327,10 +352,6 @@ $footerText: #63769d;
     gap: 0;
   }
 
-  .header1 .mobileBurger,
-  .header2 .mobileBurger {
-    cursor: pointer;
-  }
   .container .hero .header1 .links {
     display: none;
     gap: 0;
@@ -386,14 +407,131 @@ $footerText: #63769d;
       }
     }
   }
+
+  .container .main .header2 .logo {
+    height: 40px;
+  }
+  .container .main .content .details .text {
+    padding: 25px 20% 0 20%;
+  }
+  .container .main .content .details .text .number img {
+    height: 80px;
+    width: auto;
+  }
+  .container .main .content .details .text p {
+    font-size: 10px;
+  }
+  .container .main .textBlock .number img {
+    height: 80px;
+    width: auto;
+  }
+  .container .main .textBlock p {
+    font-size: 10px;
+  }
+  .container .main .header3 button {
+    font-size: 16px;
+  }
+  .container .bottomContent .schedule {
+    height: 190px;
+  }
+  .container .bottomContent .schedule h2 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 10px;
+  }
+  .container footer {
+    img {
+      height: 30px;
+      h4 {
+        font-size: 10px;
+      }
+    }
+  }
+  .container .main .content .carousel {
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+
+  .container .main .content .carousel .info img {
+    width: 120px;
+    height: auto;
+  }
 }
 
-/* Tablets (768px to 991px) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* Adjust any tablet-specific styles here */
-}
-
-/* Desktop (992px and above) */
-@media only screen and (min-width: 992px) {
-  /* Adjust any desktop-specific styles here */
+@media screen and (max-width: 550px) {
+  .container footer {
+    height: 40px;
+    padding: 8px 10%;
+    img {
+      height: 20px;
+    }
+  }
+  .container footer h4 {
+    font-size: 10px;
+  }
+  .container .bottomContent .schedule {
+    height: 190px;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  .container .main .header3 button {
+    font-size: 12px;
+  }
+  .container .main .textBlock {
+    padding: 10px 10%;
+    .number img {
+      height: 50px;
+      width: auto;
+    }
+    p {
+      font-size: 9px;
+    }
+  }
+  .container .main .content .details .text {
+    padding: 10px 10% 0 10%;
+    .number img {
+      height: 50px;
+      width: auto;
+    }
+    p {
+      font-size: 9px;
+    }
+  }
+  .container .main .content .carousel {
+    height: 100px;
+    .info {
+      padding: 10px 10% 0 10%;
+      img {
+        width: 80px;
+        height: auto;
+      }
+    }
+  }
+  .container .main .header2 {
+    padding: 8px 10%;
+    .links.active {
+      left: 22%;
+    }
+    .logo {
+      height: 30px;
+    }
+    li {
+      font-size: 10px;
+    }
+  }
+  .container .hero .header1 {
+    padding: 8px 10%;
+    .links.active {
+      right: 10%;
+      top: 35px;
+    }
+    img {
+      height: 25px;
+    }
+    li {
+      font-size: 10px;
+    }
+  }
 }
