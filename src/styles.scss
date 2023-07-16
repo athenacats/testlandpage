@@ -110,7 +110,7 @@ $footerText: #63769d;
         text-decoration: none;
       }
     }
-    .content {
+    #content {
       position: relative;
       img {
         width: 100%;
@@ -204,7 +204,7 @@ $footerText: #63769d;
         }
       }
     }
-    .textBlock {
+    #textBlock {
       background-color: $white;
       max-height: 180px;
       padding: 30px 22.8%;
@@ -313,20 +313,20 @@ $footerText: #63769d;
 }
 
 @media screen and (max-width: 1050px) {
-  .container .main .content .details .text .number img {
+  .container .main #content .details .text .number img {
     height: 90px;
     width: auto;
   }
-  .container .main .content .details .text p {
+  .container .main #content .details .text p {
     font-size: 12px;
   }
-  .container .main .content .carousel {
+  .container .main #content .carousel {
     align-items: center;
     justify-content: center;
     height: 200px;
   }
 
-  .container .main .content .carousel .info img {
+  .container .main #content .carousel .info img {
     width: 180px;
     height: auto;
   }
@@ -411,21 +411,21 @@ $footerText: #63769d;
   .container .main .header2 .logo {
     height: 40px;
   }
-  .container .main .content .details .text {
+  .container .main #content .details .text {
     padding: 25px 20% 0 20%;
   }
-  .container .main .content .details .text .number img {
+  .container .main #content .details .text .number img {
     height: 80px;
     width: auto;
   }
-  .container .main .content .details .text p {
+  .container .main #content .details .text p {
     font-size: 10px;
   }
-  .container .main .textBlock .number img {
+  .container .main #textBlock .number img {
     height: 80px;
     width: auto;
   }
-  .container .main .textBlock p {
+  .container .main #textBlock p {
     font-size: 10px;
   }
   .container .main .header3 button {
@@ -448,13 +448,13 @@ $footerText: #63769d;
       }
     }
   }
-  .container .main .content .carousel {
+  .container .main #content .carousel {
     align-items: center;
     justify-content: center;
     height: 150px;
   }
 
-  .container .main .content .carousel .info img {
+  .container .main #content .carousel .info img {
     width: 120px;
     height: auto;
   }
@@ -479,7 +479,7 @@ $footerText: #63769d;
   .container .main .header3 button {
     font-size: 12px;
   }
-  .container .main .textBlock {
+  .container .main #textBlock {
     padding: 10px 10%;
     .number img {
       height: 50px;
@@ -489,7 +489,7 @@ $footerText: #63769d;
       font-size: 9px;
     }
   }
-  .container .main .content .details .text {
+  .container .main #content .details .text {
     padding: 10px 10% 0 10%;
     .number img {
       height: 50px;
@@ -499,7 +499,7 @@ $footerText: #63769d;
       font-size: 9px;
     }
   }
-  .container .main .content .carousel {
+  .container .main #content .carousel {
     height: 100px;
     .info {
       padding: 10px 10% 0 10%;

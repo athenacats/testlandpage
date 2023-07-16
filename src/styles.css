@@ -98,33 +98,33 @@ body {
 .container .main .header2 a {
   text-decoration: none;
 }
-.container .main .content {
+.container .main #content {
   position: relative;
 }
-.container .main .content img {
+.container .main #content img {
   width: 100%;
   max-height: 900px;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container .main .content .details {
+.container .main #content .details {
   position: absolute;
   top: 0;
 }
-.container .main .content .details .text {
+.container .main #content .details .text {
   padding: 65px 20% 0 20%;
 }
-.container .main .content .details .text .number img {
+.container .main #content .details .text .number img {
   height: 135px;
   width: auto;
 }
-.container .main .content .details .text p {
+.container .main #content .details .text p {
   padding-left: 70px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
 }
-.container .main .content .carousel {
+.container .main #content .carousel {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -135,7 +135,7 @@ body {
   align-items: center;
   background-color: rgba(65, 79, 107, 0.6);
 }
-.container .main .content .carousel .info {
+.container .main #content .carousel .info {
   z-index: 20;
   display: none;
   gap: 10px;
@@ -143,18 +143,18 @@ body {
   align-items: center;
   justify-content: center;
 }
-.container .main .content .carousel .info img {
+.container .main #content .carousel .info img {
   max-height: 135px;
   max-width: 220px;
   cursor: pointer;
 }
-.container .main .content .carousel .info:first-child {
+.container .main #content .carousel .info:first-child {
   display: flex;
 }
-.container .main .content .carousel .info img:hover {
+.container .main #content .carousel .info img:hover {
   opacity: 0.8;
 }
-.container .main .content .carousel .ellipse {
+.container .main #content .carousel .ellipse {
   cursor: pointer;
   height: 4px;
   width: 4px;
@@ -163,11 +163,11 @@ body {
   display: inline-block;
   transition: background-color 0.5s ease;
 }
-.container .main .content .carousel .enable,
-.container .main .content .carousel .ellipse:hover {
+.container .main #content .carousel .enable,
+.container .main #content .carousel .ellipse:hover {
   background-color: hsl(0, 0%, 100%);
 }
-.container .main .content .carousel .fade {
+.container .main #content .carousel .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.4s;
   animation-name: fade;
@@ -181,7 +181,7 @@ body {
     opacity: 2;
   }
 }
-.container .main .textBlock {
+.container .main #textBlock {
   background-color: hsl(0, 0%, 100%);
   max-height: 180px;
   padding: 30px 22.8%;
@@ -191,7 +191,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.container .main .textBlock .number img {
+.container .main #textBlock .number img {
   height: 135px;
   width: auto;
 }
@@ -286,19 +286,19 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
-  .container .main .content .details .text .number img {
+  .container .main #content .details .text .number img {
     height: 90px;
     width: auto;
   }
-  .container .main .content .details .text p {
+  .container .main #content .details .text p {
     font-size: 12px;
   }
-  .container .main .content .carousel {
+  .container .main #content .carousel {
     align-items: center;
     justify-content: center;
     height: 200px;
   }
-  .container .main .content .carousel .info img {
+  .container .main #content .carousel .info img {
     width: 180px;
     height: auto;
   }
@@ -374,21 +374,21 @@ body {
   .container .main .header2 .logo {
     height: 40px;
   }
-  .container .main .content .details .text {
+  .container .main #content .details .text {
     padding: 25px 20% 0 20%;
   }
-  .container .main .content .details .text .number img {
+  .container .main #content .details .text .number img {
     height: 80px;
     width: auto;
   }
-  .container .main .content .details .text p {
+  .container .main #content .details .text p {
     font-size: 10px;
   }
-  .container .main .textBlock .number img {
+  .container .main #textBlock .number img {
     height: 80px;
     width: auto;
   }
-  .container .main .textBlock p {
+  .container .main #textBlock p {
     font-size: 10px;
   }
   .container .main .header3 button {
@@ -409,12 +409,12 @@ body {
   .container footer img h4 {
     font-size: 10px;
   }
-  .container .main .content .carousel {
+  .container .main #content .carousel {
     align-items: center;
     justify-content: center;
     height: 150px;
   }
-  .container .main .content .carousel .info img {
+  .container .main #content .carousel .info img {
     width: 120px;
     height: auto;
   }
@@ -438,33 +438,33 @@ body {
   .container .main .header3 button {
     font-size: 12px;
   }
-  .container .main .textBlock {
+  .container .main #textBlock {
     padding: 10px 10%;
   }
-  .container .main .textBlock .number img {
+  .container .main #textBlock .number img {
     height: 50px;
     width: auto;
   }
-  .container .main .textBlock p {
+  .container .main #textBlock p {
     font-size: 9px;
   }
-  .container .main .content .details .text {
+  .container .main #content .details .text {
     padding: 10px 10% 0 10%;
   }
-  .container .main .content .details .text .number img {
+  .container .main #content .details .text .number img {
     height: 50px;
     width: auto;
   }
-  .container .main .content .details .text p {
+  .container .main #content .details .text p {
     font-size: 9px;
   }
-  .container .main .content .carousel {
+  .container .main #content .carousel {
     height: 100px;
   }
-  .container .main .content .carousel .info {
+  .container .main #content .carousel .info {
     padding: 10px 10% 0 10%;
   }
-  .container .main .content .carousel .info img {
+  .container .main #content .carousel .info img {
     width: 80px;
     height: auto;
   }
